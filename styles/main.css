@@ -1,9 +1,5 @@
 body {background-color: lightblue}
 
-@media screen and (max-width: 25em) {
-	body {background-color:skyblue}
-}
-
 @media screen and (max-height: 28em) {
 	#text-area {
 		font-size: 80%;
@@ -13,6 +9,58 @@ body {background-color: lightblue}
 	}
 	#title {
 		font-size: 140%;
+		line-height: 0;
+	}
+}
+
+@media screen and (min-height: 38em) {
+	#text-area {
+		font-size: 110%;
+	}
+	#buttons-area {
+		font-size: 110%;
+	}
+	#title {
+		font-size: 280%;
+		line-height: 0;
+	}
+}
+
+@media screen and (min-height: 45em) {
+	#text-area {
+		font-size: 120%;
+	}
+	#buttons-area {
+		font-size: 120%;
+	}
+	#title {
+		font-size: 280%;
+		line-height: 0;
+	}
+}
+
+@media screen and (min-height: 60em) {
+	#text-area {
+		font-size: 220%;
+	}
+	#buttons-area {
+		font-size: 220%;
+	}
+	#title {
+		font-size: 450%;
+		line-height: 0;
+	}
+}
+
+@media screen and (min-height: 80em) {
+	#text-area {
+		font-size: 300%;
+	}
+	#buttons-area {
+		font-size: 250%;
+	}
+	#title {
+		font-size: 610%;
 		line-height: 0;
 	}
 }
