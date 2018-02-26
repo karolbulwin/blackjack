@@ -65,6 +65,19 @@ body {background-color: lightblue}
 	}
 }
 
+@media screen and (min-height: 150em) {
+	#text-area {
+		font-size: 500%;
+	}
+	#buttons-area {
+		font-size: 400%;
+	}
+	#title {
+		font-size: 880%;
+		line-height: 0;
+	}
+}
+
 hr {
 	border-bottom-color: coral;
 	border-bottom-style: groove;
