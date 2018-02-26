@@ -1,0 +1,67 @@
+body {background-color: lightblue}
+
+@media screen and (max-width: 25em) {
+	body {background-color:skyblue}
+}
+
+@media screen and (max-height: 28em) {
+	#text-area {
+		font-size: 80%;
+	}
+	#buttons-area {
+		font-size: 80%;
+	}
+	#title {
+		font-size: 140%;
+		line-height: 0;
+	}
+}
+
+hr {
+	border-bottom-color: coral;
+	border-bottom-style: groove;
+}
+#text-area {
+	width: 18em;
+	height: 20em;
+	padding: 0.1em 0.2em;
+	background-color: azure;
+	border: 0.1em solid navy;
+	margin: auto;
+}
+#title {
+	color:#613000;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-variant-caps: petite-caps;
+} 
+
+#buttons-area {
+	width: 18em;
+	padding-top: 0.2em;
+	margin: auto;
+}
+
+.button:first-child {
+	margin-left: 6em;
+}
+
+.button {
+	background-color: darkorange;
+	border: 0.04em solid navy;
+	border-radius: 0.5em;
+	font-size: 1em;
+	cursor: pointer;
+	padding: 0.4em;
+	width: 6em;
+	margin-left: 1.9em;
+}
+
+.button:hover {
+	background-color: #ffaf4d;
+}
+
+.button:active {
+	background-color: #ffc680;
+}
