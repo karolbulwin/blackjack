@@ -39,7 +39,7 @@
     }
                 
   ],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/?utm_source=a2hs",
   "background_color": "lightblue",
   "theme_color": "#613000",
   "display": "standalone"
