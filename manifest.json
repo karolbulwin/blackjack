@@ -39,7 +39,7 @@
     }
                 
   ],
-  "start_url": "https://karolbulwin.github.io/blackjack/",
+  "start_url": "/blackjack/",
   "background_color": "lightblue",
   "theme_color": "#613000",
   "display": "standalone"
