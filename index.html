@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="theme-color" content="#613000"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Blackjack, javascript"/>
-  <meta name="author" content="Karol Bulwin" />
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="icon" href="images/icons/blackjack-icon16x16.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Blackjack!</title>
-  <link rel="manifest" href="manifest.json">
-  </head>
-  <body>
-    <header>
-      <h1 id="title">Blackjack!</h1><hr/>
-    </header>
-    <main>
-      <p id="text-area">some text...</p>
-      <div id="buttons-area">
-        <button class="button" id="new-g-bttn">New game!</button>
-        <button class="button" id="hit-bttn">Hit!</button>
-        <button class="button" id="stay-bttn">Stay!</button>
+  <meta name="theme-color" content="#613000" />
+  <meta name="description" content="Blackjack" />
+  <meta name="author" content="Karol Bulwin" />
+
+  <link rel='stylesheet' href='public/stylesheets/style.css' />
+  <link rel="icon" href="images/icons/blackjack-icon16x16.png" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h1>Blackjack!</h1>
+  </header>
+  <main>
+    <div class="container opacity-0">
+      <div class="row">
+        <p id="text-area"></p>
       </div>
-    </main>
-    <script src="scripts/script.js"></script>
-  </body>
+      <div class="row game">
+        <div class="row dealer"></div>
+        <div class="row opacity-0 score">Dealer score: <span id="dealer-score"></span></div>
+        <div class="row player"></div>
+        <div class="row opacity-0 score">Player score: <span id="player-score"></span></div>
+      </div>
+      <div class="row bttn-bar">
+        <button id="hit-btn" type="button" class="btn btn-success hidden">Hit</button>
+        <button id="stay-btn" type="button" class="btn btn-success hidden">Stay</button>
+        <button id="new-btn" type="button" class="btn btn-success">New game</button>
+      </div>
+  </main>
+  <script src="public/javascripts/main.js"></script>
+</body>
+
 </html>
