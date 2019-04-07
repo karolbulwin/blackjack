@@ -1,0 +1,45 @@
+{
+  "name": "blackjack",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=blackjack:* nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "node-sass-middleware": "0.11.0",
+    "nodemon": "^1.18.10"
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karolbulwin/blackjack.git"
+  },
+  "author": "Karol Bulwin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karolbulwin/blackjack/issues"
+  },
+  "homepage": "https://github.com/karolbulwin/blackjack#readme",
+  "description": "Blackjack",
+  "nodemonConfig": {
+    "ignor": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 3001
+    }
+  }
+}
