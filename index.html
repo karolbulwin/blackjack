@@ -24,18 +24,22 @@
   <main>
     <div class="container opacity-0">
       <div class="row">
-        <p id="text-area"></p>
+        <div class="col">
+          <p id="text-area"></p>
+        </div>
       </div>
       <div class="row game">
-        <div class="row dealer"></div>
-        <div class="row opacity-0 score">Dealer score: <span id="dealer-score"></span></div>
-        <div class="row player"></div>
-        <div class="row opacity-0 score">Player score: <span id="player-score"></span></div>
+        <div class="col dealer"></div>
+        <div class="col opacity-0 score">Dealer score: <span id="dealer-score"></span></div>
+        <div class="col player"></div>
+        <div class="col opacity-0 score">Player score: <span id="player-score"></span></div>
       </div>
       <div class="row bttn-bar">
-        <button id="hit-btn" type="button" class="btn btn-success hidden">Hit</button>
-        <button id="stay-btn" type="button" class="btn btn-success hidden">Stay</button>
-        <button id="new-btn" type="button" class="btn btn-success">New game</button>
+        <div class="col">
+          <button id="hit-btn" type="button" class="btn btn-success hidden">Hit</button>
+          <button id="stay-btn" type="button" class="btn btn-success hidden">Stay</button>
+          <button id="new-btn" type="button" class="btn btn-success">New game</button>
+        </div>
       </div>
     </div>
   </main>
