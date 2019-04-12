@@ -53,6 +53,15 @@ display: flex;
 padding: .2em;
 }
 
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .game {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
