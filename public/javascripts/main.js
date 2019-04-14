@@ -9,6 +9,22 @@
     return cardPosition;
   }
 
+  function moveTheCardsAfterWindowResize() {
+    const dealerCards = document.querySelectorAll('.dealer > div');
+    const playerCards = document.querySelectorAll('.player > div');
+
+    for (let i = 0; i < dealerCards.length; i += 1) {
+      dealerCards[i].style.left = placeTheCardInTheRightPlace(i + 1, dealerCards[0].offsetWidth);
+    }
+
+    for (let i = 0; i < playerCards.length; i += 1) {
+      playerCards[i].style.left = placeTheCardInTheRightPlace(i + 1, playerCards[0].offsetWidth);
+    }
+  }
+  window.addEventListener('resize', () => {
+    moveTheCardsAfterWindowResize();
+  });
+
   function createCardElement(card) {
     const cardDiv = document.createElement('div');
     const cardInner = document.createElement('div');
