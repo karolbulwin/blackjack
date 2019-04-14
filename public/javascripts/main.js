@@ -50,7 +50,7 @@
   }
 
   function flipDealerCard(position) {
-    const card = document.querySelector('.card-inner');
+    const card = document.querySelectorAll('.card-inner')[1];
     if (position === false) {
       card.classList.add('flipped');
     } else {
@@ -197,8 +197,8 @@
     }
 
     flipFirstCard() {
-      this.cards[0].flip();
-      flipDealerCard(this.cards[0].getPoition());
+      this.cards[1].flip();
+      flipDealerCard(this.cards[1].getPoition());
       this.updateScores();
     }
   }
