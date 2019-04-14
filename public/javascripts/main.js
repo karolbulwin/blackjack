@@ -6,11 +6,13 @@
     const back = document.createElement('div');
     const suit = document.createElement('div');
     const value = document.createElement('div');
-    suit.innerText = card.suit;
-    value.innerText = card.value;
+
     cardDiv.classList.add('card');
 
     cardInner.classList.add('card-inner');
+    
+    suit.innerText = card.suit;
+    value.innerText = card.value;
 
     front.classList.add('front');
     front.append(suit);
