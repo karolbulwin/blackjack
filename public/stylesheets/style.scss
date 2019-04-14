@@ -128,6 +128,17 @@ padding: .2em;
       background-color: #2980b9;
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg);
+      .back-middle {
+        position: absolute;
+        background-color: $card-back-in;
+        border: 1px solid #618daa99;
+        @include radial-gradient;
+        top: .7em;
+        left: .7em;
+        bottom: .7em;
+        right: .7em;
+        border-radius: 2*.13em;
+      }
     }
     .flipped{
       -webkit-transform: rotateY(180deg);
