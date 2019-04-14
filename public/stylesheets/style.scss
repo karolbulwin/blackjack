@@ -150,8 +150,10 @@ padding: .2em;
     color: black;
     background-color: white;
     border: 1px solid black;
-    transition-duration: 200ms;
-    transition-delay: 50ms;
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+    -webkit-transition-delay: 50ms;
+            transition-delay: 50ms;
     &:hover {
       background-color: black;
       color: white;
