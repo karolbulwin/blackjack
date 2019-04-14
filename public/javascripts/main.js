@@ -95,6 +95,7 @@
     const cardInner = document.createElement('div');
     const front = document.createElement('div');
     const back = document.createElement('div');
+    const backMiddle = document.createElement('div');
     const fcol1 = document.createElement('div');
     const fcol2 = document.createElement('div');
     const fcol3 = document.createElement('div');
@@ -131,7 +132,8 @@
     front.append(fcol5);
 
     back.classList.add('back');
-
+    backMiddle.classList.add('back-middle');
+    back.append(backMiddle);
     cardInner.append(front);
     cardInner.append(back);
 
