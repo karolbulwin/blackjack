@@ -25,6 +25,25 @@
     moveTheCardsAfterWindowResize();
   });
 
+  function addColorsIcons(card) {
+    let colors = [];
+    switch (card) {
+      case 'Hearts':
+        colors = ['&#9827', '&#9831'];
+        break;
+      case 'Clubs':
+        colors = ['&#9824', '&#9828'];
+        break;
+      case 'Diamonds':
+        colors = ['&#9830', '&#9826'];
+        break;
+      default:
+        colors = ['&#9829', '&#9825'];
+        break;
+    }
+    return colors;
+  }
+
   function createCardElement(card) {
     const cardDiv = document.createElement('div');
     const cardInner = document.createElement('div');
