@@ -134,6 +134,21 @@ padding: .2em;
   .button:disabled {
     cursor: not-allowed;
   }
+  button {
+    line-height: 1.5em;
+    padding: 0.2em 1em;
+    margin: 0.2em;
+    border-radius: 0.2em;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition-duration: 200ms;
+    transition-delay: 50ms;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
 }
 
 .hidden {
