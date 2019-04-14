@@ -121,6 +121,7 @@
 
     fcol5.append(valueDown);
     fcol5.append(suitDown);
+    fcol5.classList.add('fcol5');
 
     front.classList.add('front');
     front.append(fcol1);
