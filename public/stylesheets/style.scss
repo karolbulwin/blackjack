@@ -23,8 +23,8 @@ header {
             transform: translate(-50%, -50%);
     -webkit-transition-duration: 1.8s;
             transition-duration: 1.8s;
-    text-shadow: -2px 3px 6px black, 0px 0px 14px black, 0px 0px 40px black;
-    color: white;
+    text-shadow: -2px 3px 6px $main, 0px 0px 14px $main, 0px 0px 40px $main;
+    color: $second;
   }
 }
 
@@ -102,7 +102,7 @@ padding: .2em;
       transition: transform .9s, -webkit-transform .9s;
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
-      border: 1px solid black;
+      border: 1px solid $main;
       border-radius: 2*.15em;
       -webkit-box-shadow: 0 .25em .5em 0 rgba(0,0,0,0.2);
               box-shadow: 0 .25em .5em 0 rgba(0,0,0,0.2);
@@ -116,8 +116,8 @@ padding: .2em;
       border-radius: 2*.13em;
     }
     .front {
-      background-color: #bbb;
-      color: black;
+      background-color: $second;
+      color: $main;
       display: flex;
       justify-content: space-around;
       .fcol5 {
@@ -125,13 +125,13 @@ padding: .2em;
       }
     }
     .back {
-      background-color: #2980b9;
+      background-color: $card-back;
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg);
       .back-middle {
         position: absolute;
         background-color: $card-back-in;
-        border: 1px solid #618daa99;
+        border: 1px solid transparentize($color:$card-back-in, $amount: .5);
         @include radial-gradient;
         top: .7em;
         left: .7em;
@@ -165,16 +165,16 @@ padding: .2em;
     padding: 0.2em 1em;
     margin: 0.2em;
     border-radius: 0.2em;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
+    color: $main;
+    background-color: $second;
+    border: 1px solid $main;
     -webkit-transition-duration: 200ms;
             transition-duration: 200ms;
     -webkit-transition-delay: 50ms;
             transition-delay: 50ms;
     &:hover {
-      background-color: black;
-      color: white;
+      background-color: $main;
+      color: $second;
     }
   }
 }
