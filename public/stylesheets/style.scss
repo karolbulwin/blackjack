@@ -116,6 +116,11 @@ padding: .2em;
     .front {
       background-color: #bbb;
       color: black;
+      display: flex;
+      .fcol5 {
+       color: red;
+       transform: rotate(180deg);
+      }
     }
     .back {
       background-color: #2980b9;
