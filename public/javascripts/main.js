@@ -468,6 +468,8 @@
   document.querySelector('#new-btn').onclick = () => {
     document.querySelector('.dealer + div').classList.remove('opacity-0');
     document.querySelector('.player + div').classList.remove('opacity-0');
+    document.querySelector('#new-btn').classList.remove('center');
+
     game.resetGame();
     clearDeck();
     game.play();
