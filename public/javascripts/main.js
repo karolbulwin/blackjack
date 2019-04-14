@@ -95,19 +95,39 @@
     const cardInner = document.createElement('div');
     const front = document.createElement('div');
     const back = document.createElement('div');
-    const suit = document.createElement('div');
-    const value = document.createElement('div');
-
+    const fcol1 = document.createElement('div');
+    const fcol2 = document.createElement('div');
+    const fcol3 = document.createElement('div');
+    const fcol4 = document.createElement('div');
+    const fcol5 = document.createElement('div');
+    const suitUp = document.createElement('div');
+    const suitDown = document.createElement('div');
+    const valueUp = document.createElement('div');
+    const valueDown = document.createElement('div');
+    const colorsIcons = addColorsIcons(card.suit);
+    const cardValue = addValueToCard(card.value);
     cardDiv.classList.add('card');
-
     cardInner.classList.add('card-inner');
 
-    suit.innerText = card.suit;
-    value.innerText = card.value;
+    // suit.innerText = card.suit;
+    suitUp.innerHTML = colorsIcons[0];
+    suitDown.innerHTML = colorsIcons[1];
+
+    valueUp.innerText = cardValue;
+    valueDown.innerText = cardValue;
+
+    fcol1.append(valueUp);
+    fcol1.append(suitUp);
+
+    fcol5.append(valueDown);
+    fcol5.append(suitDown);
 
     front.classList.add('front');
-    front.append(suit);
-    front.append(value);
+    front.append(fcol1);
+    front.append(fcol2);
+    front.append(fcol3);
+    front.append(fcol4);
+    front.append(fcol5);
 
     back.classList.add('back');
 
