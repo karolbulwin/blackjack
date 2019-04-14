@@ -1,4 +1,14 @@
 (function bjGame() {
+  function placeTheCardInTheRightPlace(theNumberOfCards, cardWidth) {
+    const windowWidth = window.innerWidth;
+    const margin = 30;
+    let cardPosition;
+
+    cardPosition = (windowWidth / 2) - cardWidth + margin * theNumberOfCards;
+    cardPosition += 'px';
+    return cardPosition;
+  }
+
   function createCardElement(card) {
     const cardDiv = document.createElement('div');
     const cardInner = document.createElement('div');
@@ -10,7 +20,7 @@
     cardDiv.classList.add('card');
 
     cardInner.classList.add('card-inner');
-    
+
     suit.innerText = card.suit;
     value.innerText = card.value;
 
@@ -28,9 +38,11 @@
     return cardDiv;
   }
 
-  function addCardToBoard(player, card) {
+  function addCardToBoard(player, card, theNumberOfCards) {
     const elCard = createCardElement(card);
     document.querySelector(`.${player.toLowerCase()}`).append(elCard);
+    const cardWidth = elCard.offsetWidth;
+    elCard.style.left = placeTheCardInTheRightPlace(theNumberOfCards, cardWidth);
   }
 
   function showScores(player, score) {
@@ -140,7 +152,7 @@
 
     addCard(card) {
       this.cards.push(card);
-      addCardToBoard(this.name, card);
+      addCardToBoard(this.name, card, this.cards.length);
     }
 
     updateScores() {
