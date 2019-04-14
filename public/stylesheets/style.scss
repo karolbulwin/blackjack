@@ -149,6 +149,9 @@ padding: .2em;
   .score {
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
+    span {
+      padding-left: .3em;
+    }
   }
 }
 
