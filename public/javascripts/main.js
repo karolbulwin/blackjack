@@ -319,7 +319,7 @@
     const back = document.createElement('div');
     const backMiddle = document.createElement('div');
 
-    cardDiv.classList.add('card');
+    cardDiv.classList.add('card', cardRotation());
     cardInner.classList.add('card-inner');
 
     const front = createCardFront(card);
