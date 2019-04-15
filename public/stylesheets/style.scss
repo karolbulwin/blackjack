@@ -136,6 +136,21 @@ padding: .2em;
       display: flex;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+      .fcol1, .fcol5 {
+        flex: 0 0 14%;
+        padding-top: .2em;
+      }
+      .fcol2, .fcol4 {
+        flex: 0 1 18%;
+        background-color: rgb(255, 255, 0);
+      }
+      .fcol3 {
+        flex: 1 0 18%;
+        background-color: yellowgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .fcol5 {
        -webkit-transform: rotate(180deg);
                transform: rotate(180deg);
