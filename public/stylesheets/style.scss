@@ -141,6 +141,10 @@ padding: .2em;
                transform: rotate(180deg);
       }
     }
+    .font-size-5x {
+      font-size: 5em;
+      padding-bottom: .05em;
+    }
     .Hearts, .Diamonds {
       color: $d-h-color;
     }
