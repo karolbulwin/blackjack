@@ -453,7 +453,7 @@
 
     updateScores() {
       this.score = this.getCardsValue();
-      showScores(this.name, this.score);
+      setTimeout(() => { showScores(this.name, this.score); }, 720);
     }
 
     getScore() {
