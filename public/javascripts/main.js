@@ -598,10 +598,16 @@
     document.querySelector('#text-area').innerText = '';
   }
 
+  function clearScores() {
+    document.querySelector('#dealer-score').innerText = '';
+    document.querySelector('#player-score').innerText = '';
+  }
+
   function newGame() {
     showButtons();
     hideNewGameButton();
     clearInfo();
+    clearScores();
   }
 
   function endOfGame() {
