@@ -142,23 +142,35 @@ padding: .2em;
       }
       .fcol2, .fcol4 {
         flex: 0 1 18%;
-        background-color: rgb(255, 255, 0);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size: 2em;
       }
       .fcol3 {
         flex: 1 0 18%;
-        background-color: yellowgreen;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size: 2em;
       }
       .fcol5 {
        -webkit-transform: rotate(180deg);
                transform: rotate(180deg);
       }
+      .font-size-5x {
+        font-size: 5em;
+        padding-bottom: .05em;
+      }
+      .pt-07em {
+        padding-top: .7em;
+      }
+      .pb-2em {
+        padding-bottom: 2em;
+      }
     }
-    .font-size-5x {
-      font-size: 5em;
-      padding-bottom: .05em;
+    .rotate {
+      transform: rotate(180deg);
     }
     .Hearts, .Diamonds {
       color: $d-h-color;
