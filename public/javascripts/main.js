@@ -107,7 +107,6 @@
 
   function createCardFront(card) {
     const front = document.createElement('div');
-
     const suitUp = document.createElement('div');
     const suitDown = document.createElement('div');
     const valueUp = document.createElement('div');
