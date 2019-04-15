@@ -102,8 +102,6 @@ padding: .2em;
     border-radius: 2*.15em;
     -webkit-perspective: 1000px;
             perspective: 1000px;
-    -webkit-animation: giveCard 1s ease;
-            animation: giveCard 1s ease;
     -webkit-transition-duration: 700ms;
             transition-duration: 700ms;
     .card-inner {
@@ -220,6 +218,22 @@ padding: .2em;
               transform: rotateY(180deg);
     }
   }
+  .animation-0 {
+    -webkit-animation: giveCard-0 1s ease forwards;
+            animation: giveCard-0 1s ease forwards;
+  }
+  .animation-1 {
+    -webkit-animation: giveCard-1 1s ease forwards;
+            animation: giveCard-1 1s ease forwards;
+  }
+  .animation-2 {
+    -webkit-animation: giveCard-2 1s ease forwards;
+            animation: giveCard-2 1s ease forwards;
+  }
+  .animation-3 {
+    -webkit-animation: giveCard-3 1s ease forwards;
+            animation: giveCard-3 1s ease forwards;
+  }
   .r-0 {
     -webkit-transform: rotate(-2deg);
             transform: rotate(-2deg);
@@ -283,7 +297,7 @@ padding: .2em;
 
 
 
-@-webkit-keyframes giveCard {
+@-webkit-keyframes giveCard-0 {
   0% {
     -webkit-transform: translate(0, -1400px);
             transform: translate(0, -1400px);
@@ -291,10 +305,12 @@ padding: .2em;
   100% {
     -webkit-transform: translate(0,);
             transform: translate(0,);
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
 }
 
-@keyframes giveCard {
+@keyframes giveCard-0 {
   0% {
     -webkit-transform: translate(0, -1400px);
             transform: translate(0, -1400px);
@@ -302,5 +318,86 @@ padding: .2em;
   100% {
     -webkit-transform: translate(0,);
             transform: translate(0,);
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+
+  }
+} 
+
+@-webkit-keyframes giveCard-1 {
+  0% {
+    -webkit-transform: translate(0, -1400px);
+            transform: translate(0, -1400px);
+  }
+  100% {
+    -webkit-transform: translate(0,);
+            transform: translate(0,);
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+} 
+
+@keyframes giveCard-1 {
+  0% {
+    -webkit-transform: translate(0, -1400px);
+            transform: translate(0, -1400px);
+  }
+  100% {
+    -webkit-transform: translate(0,);
+            transform: translate(0,);
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+} 
+
+@-webkit-keyframes giveCard-2 {
+  0% {
+    -webkit-transform: translate(0, -1400px);
+            transform: translate(0, -1400px);
+  }
+  100% {
+    -webkit-transform: translate(0,);
+            transform: translate(0,);
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+} 
+
+@keyframes giveCard-2 {
+  0% {
+    -webkit-transform: translate(0, -1400px);
+            transform: translate(0, -1400px);
+  }
+  100% {
+    -webkit-transform: translate(0,);
+            transform: translate(0,);
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+} 
+
+@-webkit-keyframes giveCard-3 {
+  0% {
+    -webkit-transform: translate(0, -1400px);
+            transform: translate(0, -1400px);
+  }
+  100% {
+    -webkit-transform: translate(0,);
+            transform: translate(0,);
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+} 
+
+@keyframes giveCard-3 {
+  0% {
+    -webkit-transform: translate(0, -1400px);
+            transform: translate(0, -1400px);
+  }
+  100% {
+    -webkit-transform: translate(0,);
+            transform: translate(0,);
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
   }
 } 
