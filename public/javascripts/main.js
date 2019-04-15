@@ -529,7 +529,11 @@
 
     deal(players, perHand = 1) {
       for (let i = 0; i < perHand; i += 1) {
-        players.forEach(player => this.giveCard(player));
+        players.forEach((player) => {
+          setTimeout(() => {
+            this.giveCard(player);
+          }, i * 300);
+        });
       }
     }
   }
