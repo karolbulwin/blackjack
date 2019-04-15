@@ -84,7 +84,6 @@
         break;
       default:
         value = 'A';
-        break;
     }
     return value;
   }
