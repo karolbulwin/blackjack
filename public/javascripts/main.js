@@ -90,27 +90,22 @@
     return value;
   }
 
-  function createCardElement(card) {
-    const cardDiv = document.createElement('div');
-    const cardInner = document.createElement('div');
+  function createCardFront(card) {
     const front = document.createElement('div');
-    const back = document.createElement('div');
-    const backMiddle = document.createElement('div');
-    const fcol1 = document.createElement('div');
-    const fcol2 = document.createElement('div');
-    const fcol3 = document.createElement('div');
-    const fcol4 = document.createElement('div');
-    const fcol5 = document.createElement('div');
+
     const suitUp = document.createElement('div');
     const suitDown = document.createElement('div');
     const valueUp = document.createElement('div');
     const valueDown = document.createElement('div');
     const colorsIcons = addColorsIcons(card.suit);
     const cardValue = addValueToCard(card.value);
-    cardDiv.classList.add('card');
-    cardInner.classList.add('card-inner');
 
-    // suit.innerText = card.suit;
+    const fcol1 = document.createElement('div');
+    const fcol2 = document.createElement('div');
+    const fcol3 = document.createElement('div');
+    const fcol4 = document.createElement('div');
+    const fcol5 = document.createElement('div');
+
     suitUp.innerHTML = colorsIcons[0];
     suitDown.innerHTML = colorsIcons[1];
 
@@ -130,6 +125,20 @@
     front.append(fcol3);
     front.append(fcol4);
     front.append(fcol5);
+
+    return front;
+  }
+
+  function createCardElement(card) {
+    const cardDiv = document.createElement('div');
+    const cardInner = document.createElement('div');
+    const back = document.createElement('div');
+    const backMiddle = document.createElement('div');
+
+    cardDiv.classList.add('card');
+    cardInner.classList.add('card-inner');
+
+    const front = createCardFront(card);
 
     back.classList.add('back');
     backMiddle.classList.add('back-middle');
