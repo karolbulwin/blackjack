@@ -28,7 +28,7 @@
   function addColorsIcons(card) {
     let colors = [];
     switch (card) {
-      case 'Hearts':
+      case 'Spades':
         colors = ['&#9827', '&#9831'];
         break;
       case 'Clubs':
