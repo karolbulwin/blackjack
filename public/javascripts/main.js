@@ -39,7 +39,6 @@
         break;
       default:
         colors = ['&#9829;&#xfe0e', '&#9825;&#xfe0e'];
-        break;
     }
     return colors;
   }
@@ -236,7 +235,6 @@
             break;
           default:
             value = 10;
-            break;
         }
       }
       return value;
