@@ -3,7 +3,8 @@
 @import 'mixins';
 
 body {
-  font: 1em 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
   background-color: $bg-color;
   &.using-mouse :focus:not(:disabled) { 
     outline: none;

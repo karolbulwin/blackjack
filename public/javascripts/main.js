@@ -114,6 +114,11 @@
 
     fcol1.append(valueUp);
     fcol1.append(suitUp);
+    fcol1.classList.add('fcol1');
+    fcol2.classList.add('fcol2');
+    fcol3.classList.add('fcol3');
+    fcol4.classList.add('fcol4');
+
 
     fcol5.append(valueDown);
     fcol5.append(suitDown);
