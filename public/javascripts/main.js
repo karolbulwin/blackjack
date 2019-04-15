@@ -88,14 +88,177 @@
     return value;
   }
 
-  function createContainerForIcon(cardValue) {
+  function createContainerForIcon(cardValue, colorsIcons) {
     const fcol2 = document.createElement('div');
     const fcol3 = document.createElement('div');
     const fcol4 = document.createElement('div');
-    const iconContainer = document.createElement('div');
+    const iconContainer1 = document.createElement('div');
+    const iconContainer2 = document.createElement('div');
+    const iconContainer3 = document.createElement('div');
+    const iconContainer4 = document.createElement('div');
+    const iconContainer5 = document.createElement('div');
+    const iconContainer6 = document.createElement('div');
+    const iconContainer7 = document.createElement('div');
+    const iconContainer8 = document.createElement('div');
+    const iconContainer9 = document.createElement('div');
+    const iconContainer10 = document.createElement('div');
+    const iconColor = colorsIcons[0];
 
     if (Number.isInteger(cardValue)) {
-      console.log('number');
+      switch (cardValue) {
+        case 2:
+          iconContainer1.innerHTML = iconColor;
+          fcol3.append(iconContainer1);
+          iconContainer2.innerHTML = iconColor;
+          iconContainer2.classList.add('rotate');
+          fcol3.append(iconContainer2);
+          break;
+        case 3:
+          iconContainer1.innerHTML = iconColor;
+          fcol3.append(iconContainer1);
+          iconContainer2.innerHTML = iconColor;
+          fcol3.append(iconContainer2);
+          iconContainer3.innerHTML = iconColor;
+          iconContainer3.classList.add('rotate');
+          fcol3.append(iconContainer3);
+          break;
+        case 4:
+          iconContainer1.innerHTML = iconColor;
+          fcol2.append(iconContainer1);
+          iconContainer2.innerHTML = iconColor;
+          iconContainer2.classList.add('rotate');
+          fcol2.append(iconContainer2);
+          iconContainer3.innerHTML = iconColor;
+          fcol4.append(iconContainer3);
+          iconContainer4.innerHTML = iconColor;
+          iconContainer4.classList.add('rotate');
+          fcol4.append(iconContainer4);
+          break;
+        case 5:
+          iconContainer1.innerHTML = iconColor;
+          fcol2.append(iconContainer1);
+          iconContainer2.innerHTML = iconColor;
+          iconContainer2.classList.add('rotate');
+          fcol2.append(iconContainer2);
+          iconContainer3.innerHTML = iconColor;
+          fcol3.append(iconContainer3);
+          iconContainer4.innerHTML = iconColor;
+          fcol4.append(iconContainer4);
+          iconContainer5.innerHTML = iconColor;
+          iconContainer5.classList.add('rotate');
+          fcol4.append(iconContainer5);
+          break;
+        case 6:
+          iconContainer1.innerHTML = iconColor;
+          fcol2.append(iconContainer1);
+          iconContainer2.innerHTML = iconColor;
+          fcol2.append(iconContainer2);
+          iconContainer3.innerHTML = iconColor;
+          iconContainer3.classList.add('rotate');
+          fcol2.append(iconContainer3);
+          iconContainer4.innerHTML = iconColor;
+          fcol4.append(iconContainer4);
+          iconContainer5.innerHTML = iconColor;
+          fcol4.append(iconContainer5);
+          iconContainer6.innerHTML = iconColor;
+          iconContainer6.classList.add('rotate');
+          fcol4.append(iconContainer6);
+          break;
+        case 7:
+          iconContainer1.innerHTML = iconColor;
+          fcol2.append(iconContainer1);
+          iconContainer2.innerHTML = iconColor;
+          fcol2.append(iconContainer2);
+          iconContainer3.innerHTML = iconColor;
+          iconContainer3.classList.add('rotate');
+          fcol2.append(iconContainer3);
+          iconContainer4.innerHTML = iconColor;
+          iconContainer4.classList.add('pb-2em');
+          fcol3.append(iconContainer4);
+          iconContainer5.innerHTML = iconColor;
+          fcol4.append(iconContainer5);
+          iconContainer6.innerHTML = iconColor;
+          fcol4.append(iconContainer6);
+          iconContainer7.innerHTML = iconColor;
+          iconContainer7.classList.add('rotate');
+          fcol4.append(iconContainer7);
+          break;
+        case 8:
+          iconContainer1.innerHTML = iconColor;
+          fcol2.append(iconContainer1);
+          iconContainer2.innerHTML = iconColor;
+          fcol2.append(iconContainer2);
+          iconContainer3.innerHTML = iconColor;
+          iconContainer3.classList.add('rotate');
+          fcol2.append(iconContainer3);
+          iconContainer4.innerHTML = iconColor;
+          iconContainer4.classList.add('pt-07em');
+          fcol3.append(iconContainer4);
+          iconContainer5.innerHTML = iconColor;
+          iconContainer5.classList.add('rotate', 'pt-07em');
+          fcol3.append(iconContainer5);
+          iconContainer6.innerHTML = iconColor;
+          fcol4.append(iconContainer6);
+          iconContainer7.innerHTML = iconColor;
+          fcol4.append(iconContainer7);
+          iconContainer8.innerHTML = iconColor;
+          iconContainer8.classList.add('rotate');
+          fcol4.append(iconContainer8);
+          break;
+        case 9:
+          iconContainer1.innerHTML = iconColor;
+          fcol2.append(iconContainer1);
+          iconContainer2.innerHTML = iconColor;
+          fcol2.append(iconContainer2);
+          iconContainer3.innerHTML = iconColor;
+          iconContainer3.classList.add('rotate');
+          fcol2.append(iconContainer3);
+          iconContainer4.innerHTML = iconColor;
+          iconContainer4.classList.add('rotate');
+          fcol2.append(iconContainer4);
+          iconContainer5.innerHTML = iconColor;
+          fcol3.append(iconContainer5);
+          iconContainer6.innerHTML = iconColor;
+          fcol4.append(iconContainer6);
+          iconContainer7.innerHTML = iconColor;
+          fcol4.append(iconContainer7);
+          iconContainer8.innerHTML = iconColor;
+          iconContainer8.classList.add('rotate');
+          fcol4.append(iconContainer8);
+          iconContainer9.innerHTML = iconColor;
+          iconContainer9.classList.add('rotate');
+          fcol4.append(iconContainer9);
+          break;
+        default:
+          iconContainer1.innerHTML = iconColor;
+          fcol2.append(iconContainer1);
+          iconContainer2.innerHTML = iconColor;
+          fcol2.append(iconContainer2);
+          iconContainer3.innerHTML = iconColor;
+          iconContainer3.classList.add('rotate');
+          fcol2.append(iconContainer3);
+          iconContainer4.innerHTML = iconColor;
+          iconContainer4.classList.add('rotate');
+          fcol2.append(iconContainer4);
+          iconContainer5.innerHTML = iconColor;
+          fcol3.append(iconContainer5);
+          iconContainer6.innerHTML = iconColor;
+          iconContainer6.classList.add('rotate');
+          fcol3.append(iconContainer6);
+          iconContainer7.innerHTML = iconColor;
+          fcol4.append(iconContainer7);
+          iconContainer8.innerHTML = iconColor;
+          fcol4.append(iconContainer8);
+          iconContainer9.innerHTML = iconColor;
+          iconContainer9.classList.add('rotate');
+          fcol4.append(iconContainer9);
+          iconContainer10.innerHTML = iconColor;
+          iconContainer10.classList.add('rotate');
+          fcol4.append(iconContainer10);
+      }
+    } else if (cardValue === 'A') {
+      iconContainer1.innerHTML = iconColor;
+      fcol3.append(iconContainer1);
     } else {
       fcol3.innerText = cardValue;
       fcol3.classList.add('font-size-5x');
@@ -113,7 +276,7 @@
     const cardValue = addValueToCard(card.value);
 
     const fcol1 = document.createElement('div');
-    const { fcol2, fcol3, fcol4 } = createContainerForIcon(cardValue);
+    const { fcol2, fcol3, fcol4 } = createContainerForIcon(cardValue, colorsIcons);
     const fcol5 = document.createElement('div');
 
     suitUp.innerHTML = colorsIcons[0];
