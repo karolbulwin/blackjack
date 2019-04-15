@@ -199,6 +199,18 @@ padding: .2em;
               transform: rotateY(180deg);
     }
   }
+  .r-0 {
+    transform: rotate(-2deg);
+  }
+  .r-1 {
+    transform: rotate(-1deg);
+  }
+  .r-2 {
+    transform: rotate(1deg);
+  }
+  .r-3 {
+    transform: rotate(2deg);
+  }
   .score {
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
