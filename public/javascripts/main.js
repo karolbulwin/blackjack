@@ -90,6 +90,21 @@
     return value;
   }
 
+  function createContainerForIcon(cardValue) {
+    const fcol2 = document.createElement('div');
+    const fcol3 = document.createElement('div');
+    const fcol4 = document.createElement('div');
+    const iconContainer = document.createElement('div');
+
+    if (Number.isInteger(cardValue)) {
+      console.log('number');
+    } else {
+      fcol3.innerText = cardValue;
+      fcol3.classList.add('font-size-5x');
+    }
+    return { fcol2, fcol3, fcol4 };
+  }
+
   function createCardFront(card) {
     const front = document.createElement('div');
 
@@ -101,9 +116,7 @@
     const cardValue = addValueToCard(card.value);
 
     const fcol1 = document.createElement('div');
-    const fcol2 = document.createElement('div');
-    const fcol3 = document.createElement('div');
-    const fcol4 = document.createElement('div');
+    const { fcol2, fcol3, fcol4 } = createContainerForIcon(cardValue);
     const fcol5 = document.createElement('div');
 
     suitUp.innerHTML = colorsIcons[0];
