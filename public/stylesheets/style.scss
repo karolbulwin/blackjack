@@ -385,3 +385,9 @@ padding: .2em;
             transform: rotate(2deg);
   }
 } 
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 1.5em;
+  }
+}
