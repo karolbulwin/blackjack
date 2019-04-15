@@ -119,7 +119,7 @@
     fcol5.append(suitDown);
     fcol5.classList.add('fcol5');
 
-    front.classList.add('front');
+    front.classList.add('front', card.suit);
     front.append(fcol1);
     front.append(fcol2);
     front.append(fcol3);

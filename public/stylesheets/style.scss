@@ -140,6 +140,12 @@ padding: .2em;
                transform: rotate(180deg);
       }
     }
+    .Hearts, .Diamonds {
+      color: $d-h-color;
+    }
+    .Clubs, .Spades {
+      color: $c-s-color;
+    }
     .back {
       background-color: $card-back;
       -webkit-transform: rotateY(180deg);
