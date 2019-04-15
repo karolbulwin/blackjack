@@ -307,6 +307,12 @@
     return front;
   }
 
+  function cardRotation() {
+    let rotate = Math.round(Math.random() * 3);
+    rotate = `r-${rotate}`;
+    return rotate;
+  }
+
   function createCardElement(card) {
     const cardDiv = document.createElement('div');
     const cardInner = document.createElement('div');
