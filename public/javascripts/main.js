@@ -29,16 +29,16 @@
     let colors = [];
     switch (card) {
       case 'Spades':
-        colors = ['&#9827', '&#9831'];
+        colors = ['&#9827;&#xfe0e', '&#9831;&#xfe0e'];
         break;
       case 'Clubs':
-        colors = ['&#9824', '&#9828'];
+        colors = ['&#9824;&#xfe0e', '&#9828;&#xfe0e'];
         break;
       case 'Diamonds':
-        colors = ['&#9830', '&#9826'];
+        colors = ['&#9830;&#xfe0e', '&#9826;&#xfe0e'];
         break;
       default:
-        colors = ['&#9829', '&#9825'];
+        colors = ['&#9829;&#xfe0e', '&#9825;&#xfe0e'];
         break;
     }
     return colors;
