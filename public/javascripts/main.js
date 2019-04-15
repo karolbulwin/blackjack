@@ -550,7 +550,7 @@
       this.deck.addCards();
       this.deck.shuffleDeck();
       this.deck.deal(this.players, 2);
-      this.dealer.flipFirstCard();
+      setTimeout(() => { this.dealer.flipFirstCard(); }, 320);
     }
 
     additionalCard(player) {
