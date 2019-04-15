@@ -104,6 +104,7 @@ padding: .2em;
             perspective: 1000px;
     -webkit-animation: giveCard 1s ease;
             animation: giveCard 1s ease;
+    transition-duration: 700ms;
     .card-inner {
       position: relative;
       width: 100%;
