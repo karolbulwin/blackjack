@@ -309,7 +309,7 @@
 
   function cardRotation() {
     let rotate = Math.round(Math.random() * 3);
-    rotate = `r-${rotate}`;
+    rotate = `animation-${rotate}`;
     return rotate;
   }
 
