@@ -5,6 +5,7 @@ module.exports = {
     },
     "rules": {
         "comma-dangle": ["error", "never"],
-        "prefer-destructuring": ["error", {"object": true, "array": false}]
+        "prefer-destructuring": ["error", {"object": true, "array": false}],
+        "no-console": "off"
     }
 };
