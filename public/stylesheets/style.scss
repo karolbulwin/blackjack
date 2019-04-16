@@ -269,7 +269,9 @@ padding: .2em;
             transition-duration: 200ms;
     -webkit-transition-delay: 50ms;
             transition-delay: 50ms;
-    &:hover {
+
+    @include hover;
+    &:active {
       background-color: $main;
       color: $second;
     }
