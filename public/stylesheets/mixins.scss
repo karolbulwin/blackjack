@@ -1,3 +1,11 @@
 @mixin radial-gradient {
-    background-image: repeating-radial-gradient($card-back-in 2%, $main 26%, $card-back-in 100%)
+  background-image: repeating-radial-gradient($card-back-in 2%, $main 26%, $card-back-in 100%)
+}
+@mixin hover {
+  @media not all and (hover: none) {
+    &:hover {
+      background-color: lighten($color: $main, $amount: 10%);
+      color: $second;
+    }
+  }
 }
