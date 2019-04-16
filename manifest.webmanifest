@@ -1,0 +1,33 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Blackjack",
+  "short_name": "Blackjack",
+  "description": "Blackjack, offline card game",
+  "icons": [
+    {
+    "src": "public/images/icons/favicon-16.png",
+    "sizes": "16x16"
+  }, {
+    "src": "public/images/icons/favicon-64.png",
+    "sizes": "64x64"
+  }, {
+    "src": "public/images/icons/favicon-128.png",
+    "sizes": "128x128"
+  }, {
+    "src": "public/images/icons/favicon-144.png",
+    "sizes": "144x144"
+  }, {
+    "src": "public/images/icons/favicon-192.png",
+    "sizes": "192x192"
+  }, {
+    "src": "public/images/icons/favicon-512.png",
+    "sizes": "512x512"
+  }
+],
+  "start_url": "/blackjack/index.html",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "scope": "/blackjack/",
+  "theme_color": "#000000"
+}
