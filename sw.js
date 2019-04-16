@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bj-cache-v2';
+const CACHE_NAME = 'bj-cache-v2.1';
 const urlsToCache = [
   '/',
   'index.html',
@@ -7,6 +7,14 @@ const urlsToCache = [
   'public/javascripts/main.js',
   'public/javascripts/for-sw.js',
   'public/javascripts/detect-mouse.js',
+  'public/images/icons/colors/Clubs.png',
+  'public/images/icons/colors/Clubs.svg',
+  'public/images/icons/colors/Diamonds.png',
+  'public/images/icons/colors/Diamonds.svg',
+  'public/images/icons/colors/Hearts.png',
+  'public/images/icons/colors/Hearts.svg',
+  'public/images/icons/colors/Spades.png',
+  'public/images/icons/colors/Spades.svg',
   'https://fonts.googleapis.com/css?family=Roboto+Slab',
   'https://use.fontawesome.com/releases/v5.8.1/css/all.css'
 ];
@@ -25,7 +33,7 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-  const cacheWhitelist = ['bj-cache-v2'];
+  const cacheWhitelist = ['bj-cache-v2.1'];
 
   event.waitUntil(
     caches.keys().then(cacheNames => Promise.all(
