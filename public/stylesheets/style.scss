@@ -113,7 +113,7 @@ padding: .2em;
       transition: transform .9s, -webkit-transform .9s;
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
-      border: 1px solid $main;
+      border: 1px solid rgba(0,0,0,0.2);
       border-radius: 2*.15em;
       -webkit-box-shadow: 0 .25em .5em 0 rgba(0,0,0,0.2);
               box-shadow: 0 .25em .5em 0 rgba(0,0,0,0.2);
