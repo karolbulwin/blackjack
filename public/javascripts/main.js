@@ -419,7 +419,7 @@
 
     checkIfAce() {
       let isAce = false;
-      if (this.value === 'Ace') {
+      if (this.value === 'Ace' && this.is_face_up) {
         isAce = true;
       }
       return isAce;
