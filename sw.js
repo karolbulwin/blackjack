@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bj-cache-v2.2.2';
+const CACHE_NAME = 'bj-cache-v2.2.3';
 const urlsToCache = [
   '/',
   'index.html',
@@ -33,7 +33,7 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-  const cacheWhitelist = ['bj-cache-v2.2.2'];
+  const cacheWhitelist = ['bj-cache-v2.2.3'];
 
   event.waitUntil(
     caches.keys().then(cacheNames => Promise.all(
