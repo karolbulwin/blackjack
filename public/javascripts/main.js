@@ -666,13 +666,6 @@
         break;
       }
     }
-    // while (!game.player.isBusted() && game.dealer.getScore() < game.player.getScore()) {
-    //   if (game.dealer.cards.length < 5) {
-    //     itsTurn(game.dealer);
-    //   } else {
-    //     break;
-    //   }
-    // }
     checkWhoWon();
   };
 
